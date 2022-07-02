@@ -13,10 +13,6 @@ function getData() {
 		console.log("Network error");
 	};
 
-	xhr.onprogress = function (e) {
-		console.log(e);
-	};
-
 	xhr.onload = function () {
 		if (xhr.status === 200) {
 			const data = JSON.parse(xhr.responseText);
